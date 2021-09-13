@@ -1,0 +1,522 @@
+
+:root {
+  --main-color: #f87622;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F2EB !important;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar{
+  padding-top: 10px !important;
+  background: #ffffff;
+  height: 70px;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  position: fixed;
+}
+
+.navbar .logo{
+  height: 40px
+}
+
+.navbar form .form-group{
+  display: flex;
+}
+
+.navbar form .form-group .form-control{
+  width: 300px;
+  border-color: var(--main-color);
+}
+
+.navbar form .form-group button{
+  margin-left: 10px;
+  background-color: var(--main-color);
+  color: #ffffff;
+}
+
+.navbar .left{
+  display: flex;
+  text-align: center;
+}
+
+.navbar .left .user{
+  display: flex;
+  margin-right: 20px;
+}
+
+.navbar .left .user span span{
+  background: var(--main-color);
+  font-size: 10px;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: -5px;
+  margin-left: -10px;
+}
+
+.navbar .left .user p{
+  margin-left: 10px;
+}
+
+.navbar .left .sell{
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: var(--main-color);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+/***************** content ******************/
+.content{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/**************** side bar ***********************/
+.sidebar{
+  background-color: #ffffff;
+  width: 300px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.sidebar ul{
+  list-style: none;
+  text-align: start;
+}
+
+.sidebar ul a{
+  text-decoration: none;
+  color: rgb(71, 69, 69);
+}
+
+.sidebar ul a:hover{
+  text-decoration: none;
+  color: #0172B5;
+}
+
+.sidebar ul a li{
+  line-height: 40px;
+  align-items: center;
+}
+
+.sidebar ul a li .start{
+  margin-right: 10px;
+}
+.sidebar ul a li .end{
+  text-align: end;
+  float: right;
+  margin-bottom: -20px !important;
+  margin-right: 10px;
+}
+
+/****************** slider ************************/
+.slider{
+  width: 800px;
+  height: 420px !important;
+}
+
+.slider-img{
+  height: 420px !important;
+  width: inherit;
+}
+
+/***************** caterories ********/
+.categories{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.categories .title{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--main-color);
+}
+
+.categories .title span{
+  font-size: 13px;
+  margin-right: 20px;
+  color: rgb(41, 40, 40);
+  cursor: pointer;
+}
+
+.products{
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.product{
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(41, 40, 40);
+  transition: 1s;
+}
+
+.product:hover{
+  text-decoration: none;
+  color: var(--main-color);
+  padding: 0px;
+}
+
+.product img{
+  width: 200px;
+}
+
+.product .name{
+  font-size: 14px;
+}
+
+.product .price{
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: -10px
+}
+
+.product .old-price{
+  margin-top: -10px;
+}
+
+.product button{
+  height: 36px;
+  width: 36px;
+  color: #ffffff;
+  border: none;
+  border-radius: 17px;
+  position: absolute;
+  text-align: center;
+  margin-left: 150px;
+  margin-top: -30px;
+  background: var(--main-color);
+}
+
+
+/************* show product ********************/
+.show-product{
+  padding-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+.show-product .col-md-8{
+   background: #ffffff;
+   padding: 10px;
+}
+
+.show-product .col-md-8 .row .col-md-6 img{
+  width: inherit;
+}
+
+.show-product .col-md-8 .row .col-md-6 .title{
+  font-size: 17px;
+}
+
+.show-product .col-md-8 .row .col-md-6 .pricing{
+  color: var(--main-color);
+  background-color: #f1e9e9;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-product .col-md-8 .row .col-md-6 .before{
+  color: rgb(105, 103, 103);
+  font-size: 17px;
+}
+
+.show-product .col-md-8 .row .col-md-6 .pricing .offer{
+  background-color: var(--main-color);
+  padding: 2px;
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 3px;
+  text-align: center;
+  align-items: center;
+}
+
+.show-product .col-md-8 .row .col-md-6 .rating{
+  color: var(--main-color);
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.show-product .col-md-8 .row .col-md-6 .rating span{
+  margin-left: 20px;
+  color: rgb(80, 78, 78);
+  font-size: 13px;;
+}
+
+
+/**************** seller ****************************/
+.seller{
+  background: #ffffff;
+  margin-left: 20px;
+  padding-top: 20px;
+  height: 225px;
+}
+
+.seller .top {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.seller .top :hover{
+  text-decoration: none;
+}
+
+.seller .top .user{
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(48, 47, 47);
+}
+
+.seller .top .user img{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.seller .user .top{
+  font-size: 14px
+}
+
+.seller .top .user .info div{
+  display: flex;
+  justify-content:space-evenly;
+  font-size: 10px;
+}
+
+.seller .top .user .info div p{
+  background: rgb(235, 230, 230);
+  padding: 3px 6px 3px 6px;
+  border-radius: 3px;
+}
+
+.seller .top .user .info div p .icon{
+  color: var(--main-color);
+}
+
+.seller .top .user .info div p:last-child{
+  margin-left: 10px;
+}
+
+.seller .top .btn{
+  background: var(--main-color);
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.seller .top .btn a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.seller .top .btn a:hover{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.seller .top .btn:last-child{
+  background-color: #ffffff;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.seller .second{
+  background: #ffffff;
+  padding: 10px;
+  margin: -15px;
+  margin-top: 0px !important;
+}
+
+.seller .second h5{
+  text-align: center;
+}
+
+.seller .second  ul{
+  text-align: start;
+}
+
+.seller .second  ul li{
+  line-height: 23px;
+  font-size: 13px;
+}
+
+/***************** send sms form ****************/
+.sms-form{
+  position: absolute;
+  background: #ffffff;
+  padding: 10px;
+  margin-top: 55px;
+  box-shadow:1px 1px 1px 1px rgb(187, 181, 181);
+  width: 260px;
+  border-radius: 5px;
+  display: none;
+}
+
+.sms-form p{
+  font-size: 14px;
+}
+
+.sms-form p span{
+  color: var(--main-color);
+  font-size: 20px;
+  margin-top: -5px;
+}
+
+.sms-form .form-group textarea{
+  border-color: var(--main-color);
+  font-size: 13px;
+}
+
+.sms-form .form-group button{
+  height: 25px !important;
+  border: none;
+  background: #ffffff;
+  margin-top: 50px;
+  color: var(--main-color);
+  font-size: 20px;
+  
+}
+
+.sms-form .form-group{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/****************** chats **********************/
+.chat .box{
+  margin-top: 20px;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.chat .box .left{
+  width: 350px;
+  background-color: #ffffff;
+}
+
+.chat .box .left h3{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px 5px 30px;
+}
+
+.chat .box .left .chats{
+  margin: 0px;
+  margin-left: 30px;
+  height: 400px;
+  overflow:scroll; 
+  overflow-x: hidden;
+}
+
+.chat .box .left .chats .person{
+  display: flex;
+  padding: 3px;
+}
+
+.chat .box .messages{
+  padding: 30px;
+  max-width: 700px;
+  background: #bebcbc;
+
+}
+
+.chat .box .messages .sms{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.chat .box .messages .sms p{
+  max-width: 300px;
+  background: #ffffff;
+  padding: 8px 20px 8px 20px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.chat .box .messages .sent img{
+  margin-right: 10px;
+}
+
+.chat .box .messages .received img{
+  margin-left: 10px;
+}
+
+.chat .box .messages .sms img{
+  width: 40px;
+  height: 40px;
+}
+
+.chat .box .left .chats .person img{
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 20px;
+}
+
+.chat .box .left .chats .person div{
+  margin-left: 10px;
+}
+
+.chat .box .left .chats .person div h5{
+  font-size: 14px;
+  margin: 0px;
+  color: var(--main-color);
+}
+
+.chat .box .left .chats .person div p{
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
